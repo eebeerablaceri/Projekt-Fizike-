@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<title>Isaac Newton</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#f5f7f7;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+animation:fadeDown 1s ease;
+}
+
+header h2{
+color:#0077b6;
+}
+
+header a{
+text-decoration:none;
+color:#0077b6;
+font-weight:bold;
+}
+
+/* MAIN */
+
+.container{
+padding:80px 20px;
+text-align:center;
+}
+
+h1{
+color:#0077b6;
+margin-bottom:20px;
+font-size:36px;
+animation:fadeUp 1s ease;
+}
+
+p{
+max-width:700px;
+margin:10px auto;
+line-height:1.6;
+animation:fadeUp 1.5s ease;
+}
+
+/* BOX */
+
+.box{
+margin-top:30px;
+background:#e9f1f4;
+padding:20px;
+border-radius:10px;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
+animation:zoomIn 1s ease;
+}
+
+/* LISTA */
+
+ul{
+margin-top:30px;
+list-style:none;
+}
+
+ul li{
+margin:10px 0;
+font-size:18px;
+animation:fadeLeft 1s ease;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:40px;
+padding:12px 20px;
+background:#00a8cc;
+color:white;
+border-radius:25px;
+text-decoration:none;
+transition:0.3s;
+animation:fadeUp 2s ease;
+}
+
+.btn:hover{
+background:#0077b6;
+transform:scale(1.05);
+}
+
+#punoi{
+    font-size: large;
+}
+
+/* ANIMACIONE */
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeDown{
+from{
+opacity:0;
+transform:translateY(-30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeLeft{
+from{
+opacity:0;
+transform:translateX(-30px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+@keyframes zoomIn{
+from{
+opacity:0;
+transform:scale(0.8);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h2>Ligji i parë i Njutonit</h2>
+<a href="index.html">⬅ Kthehu</a>
+</header>
+
+<div class="container">
+
+<h1>Isaac Newton</h1>
+
+<p>
+Isaac Newton lindi më 25 dhjetor 1642 në Angli. Ai ishte fizikan, matematikan, astronom dhe filozof natyror, dhe konsiderohet një nga figurat më të rëndësishme të Revolucionit Shkencor. Studioi dhe punoi në University of Cambridge, ku u bë profesor i matematikës.
+</p>
+
+<div class="box">
+
+<h2>Kontributet kryesore</h2>
+
+<p>
+Newton formuloi tre ligjet e lëvizjes, të cilat shpjegojnë se si veprojnë forcat dhe si lëvizin trupat. Ai gjithashtu formuloi ligjin e gravitetit universal dhe kontribuoi në fushën e optikës, duke treguar se drita e bardhë përbëhet nga ngjyra të ndryshme. Ai gjithashtu kontribuoi në zhvillimin e kalkulusit, një degë shumë e rëndësishme e matematikës.
+</p>
+
+</div>
+
+<h2 style="margin-top:40px; color:#0077b6;">Veprat më të rëndësishme</h2>
+
+<ul>
+<li>Libri i tij më i famshëm, <strong>Philosophiæ Naturalis Principia Mathematica (1687)</strong>, përmbledh ligjet e lëvizjes dhe teorinë e gravitetit.</li>
+<li>Newton u nderua me titullin <strong>"Sir"</strong> për kontributet e tij në shkencë.</li>
+<li>Zbulimet e tij ndikuan thellë në zhvillimin e shkencës dhe mbeten themelore edhe sot.</li>
+</ul>
+
+<p id="punoi"><b>Punoi:</b> Amina Seitllari</p>
+
+<a href="index.html" class="btn">Kthehu në faqen kryesore</a>
+
+</div>
+
+</body>
+</html>

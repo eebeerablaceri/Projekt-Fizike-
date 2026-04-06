@@ -1,0 +1,209 @@
+<html>
+<head>
+<title>Sistemet Inerciale dhe Jo-inerciale</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#f5f7f7;
+color:#333;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+animation:fadeDown 1s ease;
+}
+
+header h2{
+color:#0077b6;
+}
+
+header a{
+text-decoration:none;
+color:#0077b6;
+font-weight:bold;
+}
+
+/* MAIN */
+.container{
+padding:80px 20px;
+text-align:center;
+}
+
+h1, h2{
+color:#0077b6;
+margin-bottom:20px;
+animation:fadeUp 1s ease;
+}
+
+p, ul{
+max-width:700px;
+margin:10px auto;
+line-height:1.6;
+animation:fadeUp 1.5s ease;
+text-align:left;
+}
+
+ul{
+list-style: disc;
+padding-left:40px;
+}
+
+/* BOX */
+.box{
+margin-top:30px;
+background:#e9f1f4;
+padding:20px;
+border-radius:10px;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
+animation:zoomIn 1s ease;
+}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+margin-top:40px;
+padding:12px 20px;
+background:#00a8cc;
+color:white;
+border-radius:25px;
+text-decoration:none;
+transition:0.3s;
+animation:fadeUp 2s ease;
+}
+
+.btn:hover{
+background:#0077b6;
+transform:scale(1.05);
+}
+#punoi{
+    font-size: large;
+    text-align: center;
+}
+/* ANIMACIONE */
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeDown{
+from{
+opacity:0;
+transform:translateY(-30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes zoomIn{
+from{
+opacity:0;
+transform:scale(0.8);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Ligji i parë i Njutonit</h2>
+<a href="index.html">⬅ Kthehu</a>
+</header>
+
+<div class="container">
+
+<h1>Çfarë është një sistem reference?</h1>
+<p>
+Në fizikë, një sistem reference është një mënyrë për të përshkruar lëvizjen e trupave (me koordinata dhe kohë). Ne zgjedhim një pikë ose trup si "bazë” dhe vëzhgojmë si lëvizin objektet në raport me të.
+</p>
+
+<h2>Sistemet Inerciale</h2>
+
+<div class="box">
+<h3>Përkufizim</h3>
+<p>
+Një sistem inercial është ai sistem reference në të cilin vlen Ligji i Parë i Njutonit: një trup e ruan gjendjen e tij të prehjes, ose të lëvizjes së njëtrajtshme deri sa mbi të të mos veprojë asnjë forcë. Ky ligj u formulua nga Isaac Newton.
+</p>
+
+<h3>Karakteristikat</h3>
+<ul>
+<li>Nuk ka përshpejtim (as linear, as rrotullues).</li>
+<li>Trupat pa forcë rezultante lëvizin me shpejtësi konstante.</li>
+<li>Ligjet e mekanikës klasike vlejnë drejtpërdrejt.</li>
+</ul>
+
+<h3>Shembuj</h3>
+<ul>
+<li>Një anije kozmike që lëviz me shpejtësi konstante në hapësirë.</li>
+<li>Një tren që lëviz drejt me shpejtësi konstante (pa nxitim).</li>
+<li>Toka konsiderohet afërsisht sistem inercial për shumë eksperimente të zakonshme.</li>
+</ul>
+</div>
+
+<h2>Sistemet Jo-inerciale</h2>
+
+<div class="box">
+<h3>Përkufizim</h3>
+<p>
+Një sistem jo-inercial është ai sistem reference që ka nxitim (rritje, ulje të shpejtësisë ose ndryshim drejtimi). Në këto sisteme, Ligji i Parë i Njutonit nuk zbatohet drejtpërdrejt, sepse shfaqen forca inerciale.
+</p>
+
+<h3>Karakteristikat e sistemeve jo-inerciale</h3>
+<ul>
+<li>Kanë përshpejtim (linear ose rrotullues).</li>
+<li>Shpejtësia e sistemit ndryshon në madhësi ose në drejtim.</li>
+<li>Ligji i Parë i Njutonit nuk zbatohet drejtpërdrejt.</li>
+<li>Shfaqen forca inerciale (si forca centrifugale dhe forca e Koriolisit).</li>
+<li>Një trup mund të duket sikur përshpejton edhe kur mbi të nuk vepron forcë reale.</li>
+</ul>
+
+<h3>Forcat inerciale</h3>
+<p>Janë forca që duken sikur veprojnë mbi trupin, por në të vërtetë lindin nga nxitim i sistemit të referencës.</p>
+<ul>
+<li>Forca centrifugale</li>
+<li>Forca e Koriolisit</li>
+</ul>
+
+<h3>Shembuj praktikë</h3>
+<ul>
+<li>Kur makina përshpejton, ndihesh i shtyrë mbrapa.</li>
+<li>Kur autobusi frenon, trupi anohet përpara.</li>
+<li>Në ashensor që niset lart, ndihesh më i rëndë.</li>
+</ul>
+</div>
+
+<p id="punoi"><b>Punoi:</b>Majneda Spahi</p>
+
+<a href="index.html" class="btn">Kthehu në faqen kryesore</a>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>Inercia</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#f5f7f7;
+color:#333;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+animation:fadeDown 1s ease;
+}
+
+header h2{
+color:#0077b6;
+}
+
+header a{
+text-decoration:none;
+color:#0077b6;
+font-weight:bold;
+}
+
+/* MAIN */
+.container{
+padding:80px 20px;
+text-align:center;
+}
+
+h1{
+color:#0077b6;
+margin-bottom:20px;
+font-size:36px;
+animation:fadeUp 1s ease;
+}
+
+p{
+max-width:700px;
+margin:10px auto;
+line-height:1.6;
+animation:fadeUp 1.5s ease;
+}
+
+/* BOX */
+.box{
+margin-top:30px;
+background:#e9f1f4;
+padding:20px;
+border-radius:10px;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
+animation:zoomIn 1s ease;
+}
+
+/* BUTTON */
+.btn{
+display:inline-block;
+margin-top:40px;
+padding:12px 20px;
+background:#00a8cc;
+color:white;
+border-radius:25px;
+text-decoration:none;
+transition:0.3s;
+animation:fadeUp 2s ease;
+}
+
+.btn:hover{
+background:#0077b6;
+transform:scale(1.05);
+}
+
+#punoi{
+    font-size: large;
+}
+/* ANIMACIONE */
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeDown{
+from{
+opacity:0;
+transform:translateY(-30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes zoomIn{
+from{
+opacity:0;
+transform:scale(0.8);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<h2>Ligji i parë i Njutonit</h2>
+<a href="index.html">⬅ Kthehu</a>
+</header>
+
+<div class="container">
+
+<h1>Çfarë është Inercia?</h1>
+
+<p>
+Inercia është një veti themelore e materies që përshkruan prirjen natyrore të çdo trupi për të ruajtur gjendjen e tij të pushimit ose të lëvizjes së njëtrajtshme drejtvizore. Kjo do të thotë se një trup nuk e ndryshon vetvetiu shpejtësinë apo drejtimin e lëvizjes nëse mbi të nuk vepron një forcë e jashtme.
+</p>
+
+<div class="box">
+<h2>Lidhja me ligjin e parë të Njutonit</h2>
+<p>
+Ky koncept është një nga bazat e mekanikës klasike dhe është formuluar qartë në ligjin e parë të lëvizjes të Isaac Newton. Ai thekson se gjendja e një trupi vazhdon e pandryshuar për sa kohë nuk ndërhyjnë ndikime nga jashtë.
+</p>
+</div>
+
+<p>
+Inercia lidhet ngushtë me masën e trupit, sepse sa më e madhe të jetë masa, aq më e madhe është edhe inercia. Rrjedhimisht, sa më e vështirë bëhet të nisësh në lëvizje një trup që është në pushim ose ta ndalosh apo t'ia ndryshosh drejtimin një trupi që është në lëvizje.
+</p>
+
+<p>
+Kjo veti shpjegon pse objektet e rënda i rezistojnë më shumë ndryshimeve të gjendjes së tyre të lëvizjes sesa objektet e lehta dhe pse përshpejtimi ose ngadalësimi i tyre kërkon veprim më të madh force. Në thelb, inercia tregon se lëvizja dhe pushimi nuk ndryshojnë pa shkak dhe çdo ndryshim i gjendjes së një trupi është pasojë e drejtpërdrejtë e veprimit të forcave të jashtme mbi të.
+</p>
+
+<p id="punoi"><b>Punoi:</b>Era Blacëri</p>
+
+<a href="index.html" class="btn">Kthehu në faqen kryesore</a>
+
+</div>
+
+</body>
+</html>

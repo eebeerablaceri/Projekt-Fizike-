@@ -1,0 +1,275 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#f5f7f7;
+color:#333;
+overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+animation:fadeDown 1s ease;
+}
+
+ul {
+display:flex;
+list-style-type:none;
+background-color:whitesmoke;
+animation:fadeRight 1s ease;
+}
+
+ul li {
+padding:16px;
+transition:0.3s;
+}
+
+ul li:hover {
+background-color:lightblue;
+}
+
+ul li a {
+text-decoration:none;
+color:#555;
+font-weight:500;
+}
+
+ul li:hover a {
+color:white;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 60px;
+background:linear-gradient(to right,#e0f7fa,#ffffff);
+animation:fadeUp 1s ease;
+}
+
+.hero-text{
+width:50%;
+animation:slideLeft 1s ease;
+}
+
+.hero-text h1{
+font-size:40px;
+margin:15px 0;
+color:#0077b6;
+animation:fadeUp 1.2s ease;
+}
+
+.hero-img img{
+width:400px;
+border-radius:12px;
+animation:slideRight 1s ease;
+}
+
+/* BUTTON */
+
+button{
+padding:12px 20px;
+border:none;
+background:#00a8cc;
+color:white;
+border-radius:25px;
+margin-top:15px;
+margin-right:10px;
+cursor:pointer;
+animation:fadeUp 1.5s ease;
+}
+
+button:hover{
+background:#0077b6;
+}
+
+.btn2{
+background:#ddd;
+color:#333;
+}
+
+.btn2:hover{
+background:#ccc;
+}
+
+/* ABOUT */
+
+.about{
+display:flex;
+align-items:center;
+gap:40px;
+padding:80px 60px;
+background:#e9f1f4;
+animation:fadeUp 1s ease;
+}
+
+.about img{
+width:350px;
+border-radius:10px;
+animation:zoomIn 1s ease;
+}
+
+/* SERVICES */
+
+.services{
+padding:80px 60px;
+text-align:center;
+animation:fadeUp 1s ease;
+}
+
+.cards{
+display:flex;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+flex:1;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+transition:0.3s;
+animation:fadeUp 1.2s ease;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+padding:80px 60px;
+background:#e9f1f4;
+text-align:center;
+animation:fadeUp 1s ease;
+}
+
+.card img{
+border-radius:10px;
+animation:fadeIn 1s ease;
+}
+
+/* CONTACT */
+
+.contact{
+padding:80px 60px;
+text-align:center;
+animation:fadeUp 1s ease;
+}
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+animation:fadeUp 1s ease;
+}
+
+input,textarea{
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#0077b6;
+color:white;
+margin-top:40px;
+animation:fadeUp 1s ease;
+}
+
+/* ANIMACIONE */
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeDown{
+from{
+opacity:0;
+transform:translateY(-30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeRight{
+from{
+opacity:0;
+transform:translateX(-30px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+@keyframes slideLeft{
+from{
+opacity:0;
+transform:translateX(-50px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+@keyframes slideRight{
+from{
+opacity:0;
+transform:translateX(50px);
+}
+to{
+opacity:1;
+transform:translateX(0);
+}
+}
+
+@keyframes zoomIn{
+from{
+opacity:0;
+transform:scale(0.8);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
